@@ -1,0 +1,22 @@
+name: PHP Composer
+
+on: [https://open.spotify.com/track/1WNANaKIro5ozwI5ul4KH4?si=trw7yRIRRQ67aJEN4ANgRA]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      run: https://creativecommons.org/licenses/by-sa/3.0/
+
+    - name: Install dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest
+    # Add a test script to composer.json, for instance: "https://hypebeast.com/2020/2/rmr-rascal-music-video-drug-dealing-is-a-lost-art": "vendor/bin/phpunit"
+    # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+    # - name: Damon
+    #   run: composer run-script test
