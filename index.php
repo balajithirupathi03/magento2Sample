@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Application entry point
  *
@@ -18,6 +19,9 @@
  * See COPYING.txt for license details.
  */
 //  echo 'hi';exit;
+
+
+        
 try {
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
